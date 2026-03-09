@@ -21,4 +21,4 @@ This project helped me practice responsive design, organizing CSS, and working f
 - Improve accessibility
 
 ## Live Demo
-Check it ouy here: [Learning Journal](https://vermillion-eclair-1eec46.netlify.app/article)
+Check it ouy here: [Learning Journal](https://vermillion-eclair-1eec46.netlify.app/)
