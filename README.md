@@ -4,8 +4,8 @@ This is a solo project built as part of the Scrimba Frontend Developer Career Pa
 The design was based on a Figma mockup and implemented using a mobile-first approach.
 
 ## Technologies
--HTML
--CSS
+- HTML
+- CSS
 
 ## Features
 - Responsive layout
