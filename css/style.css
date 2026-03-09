@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: #090909;
+  background-color: #FAFAFA;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*====== Typography ======*/
+
+header {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.logo-name,
+.featured-heading,
+.article-heading,
+.blog-post-heading {
+  font-weight: 700;
+}
+
+.logo-name {
+  font-size: 0.847rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #090909;
+}
+
+.featured-heading,
+.article-heading {
+  font-size: 2rem;
+  margin: 0.25em 0;
+  line-height: 1.1;
+}
+
+.about-me-heading {
+  font-size: 2.178rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.blog-post-heading {
+  font-size: 1.5rem;
+  color: #141414;
+  margin: 0.20em 0;
+}
+
+.featured-text {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.date,
+.article-date {
+  font-size: 0.75rem;
+}
+
+.blog-post-date {
+  font-size: 0.886rem;
+  color: #000000;
+  margin-top: 1em;
+}
+
+.blog-post-text {
+  color: #505050;
+  font-size: 1rem;
+}
+
+.view-more {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.view-more:hover {
+  color: blue;
+}
+
+.footer-text {
+  color: #ECECEC;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.footer-copyright {
+  color: #D7D7D7;
+  font-size: 0.75rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.recent-posts-heading {
+  text-align: center;
+  margin-top: 2.3em;
+  margin-bottom: 1.5em;
+}
+
+/*====== Layout ======*/
+
+.container {
+  max-width: 1085px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+/*====== Navigation ======*/
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 25px;
+  margin-right: 0.25em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+nav ul {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/*====== Home page ======*/
+
+.featured-section {
+  position: relative;
+  min-height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.featured-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #363636;
+  background-image: url("../images/featured.png");
+  background-size: cover;
+  background-position: 50% 80%;
+  transform: scaleX(-1);
+  transform-origin: center;
+  z-index: -1;
+}
+
+.featured-blog a {
+  display: block;
+  padding: 1.75em 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.blog-posts-section,
+.about-me-section {
+  margin: 2em 0;
+}
+
+.blog-post {
+  margin-bottom: 2em;
+}
+
+.blog-posts-image-container {
+  height: 245px;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+
+.blog-posts-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+/*====== About Me ======*/
+
+.profile-pic {
+  width: 182px;
+  margin: 2em 0;
+}
+
+.intro {
+  margin-bottom: 3em;
+}
+
+/*====== Article ======*/
+
+.article-image-container {
+  height: 191px;
+  display: flex;
+  align-items: center;
+  transform: scaleX(-1);
+  transform-origin: center;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+
+.article-date {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+.article-intro {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.subheading-one {
+  margin-top: 2em;
+}
+
+.article-text-content {
+  margin: 1em 0;
+}
+
+/*====== Footer ======*/
+
+footer {
+  background-color: #202020;
+  text-align: center;
+  padding: 1.75em;
+}
+
+/*====== Media Queries ======*/
+
+@media (min-width: 576px) {
+
+  .featured-section {
+    min-height: 488px;
+  }
+
+  .featured-heading {
+    font-size: 2.5rem;
+  }
+
+  .featured-text {
+    max-width: 75%;
+    margin-bottom: 1.5em;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-posts-image-container {
+    height: 232px;
+  }
+
+  .blog-post-date {
+    margin-top: 0.5em;
+  }
+
+/* Article page and about me */
+
+  .article-text {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .article-heading,
+  .about-me-heading {
+    font-size: 2.25rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+
+  .recent-posts-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+
+  .article-image-container {
+    height: 488px;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+  }
+
+  .intro-text {
+    margin-left: 1.5em;
+  }
+
+  .about-me-heading {
+    margin-bottom: 0;
+  }
+ 
+}
